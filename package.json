@@ -1,0 +1,28 @@
+{
+  "name": "electro-pi-tests",
+  "version": "1.0.0",
+  "description": "Playwright automation framework for Electro Pi Senior QA Automation Engineer assessment",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:api": "playwright test tests/api.spec.js",
+    "test:ui": "playwright test tests/inventory.spec.js",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "qa",
+    "api-testing",
+    "ui-testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "dotenv": "^18.0.4"
+  }
+}
